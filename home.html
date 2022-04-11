@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="/png/favicon.png">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/home-style.css" />
+    <link rel="stylesheet" href="/css/modal-style.css" />
+    <link rel="stylesheet" href="/css/hotspot-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+   
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="menu" onclick="hideMenu()">
+          <div class="nav-icon">
+            <div class="menu-handle-pair">
+              <div id="menu-handle" class="green"></div>
+              <div id="menu-handle" class="green"></div>
+            </div>
+            <button class="menu-frame">
+              <p class="menu-text">MENU</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="gp-nav-icon" onclick="goToHome()">
+          <img src="/svg/gp-icon.svg" alt="getaway-plan-icon" id="nav-gp-icon"/>
+        </div>
+      </div>
+      <div class="overlay-menu-bg">
+        <div class="overlay-menu">
+        <li>
+          <div class="nav-icon">
+            <div class="menu-handle-pair">
+              <div id="menu-handle" class="green"></div>
+              <div id="menu-handle" class="green"></div>
+            </div>
+            <button class="menu-frame">
+              <a class="overlay-text" href="home.html">HOME</a>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="nav-icon">
+            <div class="menu-handle-pair">
+              <div id="menu-handle" class="orange"></div>
+              <div id="menu-handle" class="orange"></div>
+            </div>
+            <button class="menu-frame-orange">
+              <a class="overlay-text" href="escape.html"
+                >ESCAPE
+                <img id="escape-arrow" src="/svg/escape-arrow.svg" alt="" />
+              </a>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="nav-icon">
+            <div class="menu-handle-pair">
+              <div id="menu-handle" class="green"></div>
+              <div id="menu-handle" class="green"></div>
+            </div>
+            <div class="menu-frame">
+              <div class="menu-third">
+                <a class="menu-link" href="findyourgetaway.html"
+                  >Find Your Getaway <br />Treasure Hunt Contest</a
+                >
+                <a class="menu-link" href="happening.html">Happening</a>
+                <a
+                  class="menu-link"
+                  href="https://www.ticket2u.com.my/escape-penang"
+                  >Buy ticket</a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="section-home-hotspots">
+
+      <!-- escape button -->
+
+      <div class="hotspot" id="escape-button">
+        <a href="prompt.html">
+          <img id="escape-arrow" src="/svg/escape-arrow.svg" alt="" />
+          <p class="escapehere-prompt">escape here</p>
+        </a>
+      </div>
+
+      <!-- about hotspot -->
+
+      <div class="hotspot" id="hotspot-about">
+        <div class="hotspot-trigger" id="trigger-about">
+          <div class="hotspot-trigger-center"></div>
+        </div>
+
+        <div class="hotspot-hover" id="hover-about">
+          <div class="modal-content">
+            <h2 class="step-h1">Who are we?</h2>
+            <p>learn more</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- happening hotspot -->
+
+      <div class="hotspot" id="hotspot-hpn">
+        <div class="hotspot-trigger" id="trigger-hpn" onclick="goHpn()">
+          <div class="hotspot-trigger-center"></div>
+        </div>
+
+        <div class="hotspot-hover" id="hover-hpn">
+          <div class="modal-content">
+            <h2 class="step-h1">Something's happening!</h2>
+            <p>learn more</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- about modal -->
+
+    <div class="section-modal" >
+      <div class="modal" id="modal-about">
+        <div id="closebtn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect #closebtn-fill x="0.5" y="0.5" width="19" height="19" rx="9.5" fill="#F9B84E"/>
+            <line x1="5.88871" y1="5.88912" x2="13.6669" y2="13.6673" stroke="black"/>
+            <line x1="5.88863" y1="13.6673" x2="13.6668" y2="5.88915" stroke="black"/>
+            <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="#043866"/>
+            </svg>
+            
+        </div>
+
+        <div class="modal-content">
+          <h2 class="step-h1">Who are we?</h2>
+          <p>Getaway Plan is an initiative by ESCAPE Penang.</p>
+          <p>
+            We are here to remind you that it is okay and necessary to take a
+            breather.
+          </p>
+          <p>
+            Therefore we are providing a space for you to get a quick escape
+            whenever you feel stressed while unable to go for a vacation at the
+            time being.
+          </p>
+          <div class="btncta">
+            <button class="yellowbtn">
+              <a href="https://www.escape.my/about">learn more</a>
+            </button>
+          </div>
+        </div>
+        <div class="modal-svg">
+          <object data="/svg/escape-pole.svg" type="" id="modal-pole"></object>
+        </div>
+      </div>
+    </div>
+
+    <!-- home bg -->
+
+    <div class="home-bg">
+      <div class="bg-svg"></div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./modal-script.js"></script>
+
+  </body>
+
+</html>

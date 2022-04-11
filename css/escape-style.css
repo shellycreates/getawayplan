@@ -1,0 +1,398 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.escape-body {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  height: 100vh;
+  position: relative;
+  overflow-x: scroll;
+  /* pointer-events: none; */
+  /* overflow-y: hidden; */
+  /* transform: rotate(-90deg); */
+  /* transform-origin: right top; */
+}
+
+.escape-content {
+  /* transform: rotate(90deg); */
+  /* transform-origin: right top; */
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+/* scroll alert */
+
+.scroll-alert {
+  background: #f48e9f;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 70px;
+  width: fit-content;
+  position: fixed;
+  top: 20vh;
+  right: 5%;
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  z-index: 110;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.scroll-alert p {
+  padding: 10px 30px;
+}
+
+/* noticeboard */
+
+.noticeboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  height: fit-content;
+  /* box-sizing: border-box; */
+  bottom: 0;
+  right: 50px;
+  position: absolute;
+  z-index: 110;
+}
+
+.noticeboard-frame {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 15px;
+  background: #66ccb4;
+  border: 1px solid #043866;
+}
+
+.noticeboard-blue {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 15px;
+    background: #1471D0;    
+    border: 1px solid #043866;
+    background-image: url(/svg/noticeboard-lines.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.noticeboard-white {
+    background: white;
+    border: 1px solid #043866;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+}
+
+.noticeboard-white h2 {
+    color: #f48e9f;
+    margin-bottom: 15px;
+}
+
+.noticeboard-white h3 {
+    margin-bottom: 15px;
+}
+
+#howtojoin-btn {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    margin-top: 10px;
+}
+
+.noticeboard-legs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 30px);
+    margin-top: -1px;
+}
+
+.noticeboard-leg {
+  background: #66ccb4;
+  border: 1px solid #043866;
+  height: 100px;
+  width: 15px;
+}
+
+.noticeboard-white .yellowbtn {
+  margin: 20px auto 10px auto;
+}
+
+.noticeboard-white .underlined-btn {
+  margin-top: 10px;
+}
+
+/* svg bg */
+
+.bg-wrap{
+  position: relative;
+  width: max-content;
+  /* z-index: -100; */
+  /* pointer-events: none; */
+}
+
+.escape-svg-bg {
+  position: relative;
+  height: 100%;
+  width: max-content;
+  /* z-index: -100; */
+  margin: 0;
+  padding: 0;
+}
+
+.escape-svg-bg svg {
+  height: 100%;
+  flex: 1;
+  /* pointer-events: none; */
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* elements interactions */
+
+.pole-draggable {
+  position: absolute;
+  display: block;
+}
+
+#escape-svg 
+#longest-float,
+#chairlift,
+#tubbies,
+#wave-ball,
+#racer-1, 
+#racer-2, 
+#racer-3, 
+#racer-4 {
+  cursor: pointer;
+  display: block;
+}
+
+/* slides */
+
+.longestfloat-clicked {
+  animation-name: longestfloat-clicked;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes longestfloat-clicked {
+  from {
+    transform: translate(0px 0px);
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: translate(-131px -50px);
+    transform: rotateZ(30deg);
+  }
+}
+
+/* chairlift */
+
+g #chairlift {
+  cursor: pointer;
+}
+
+.chairlift-clicked {
+  animation-name: chairlift-clicked;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes chairlift-clicked {
+  from {
+    transform: translate(0 0);
+  }
+  to {
+    transform: translate(680px -100px);
+  }
+}
+
+/* tubbies */
+
+.tubbies-clicked {
+  animation-name: tubbies-clicked;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tubbies-clicked {
+  from {
+    transform: translate(0px 0px);
+  }
+  to {
+    transform: translate(-830px 1030px);
+  }
+}
+
+/* waveball */
+
+.waveball-clicked {
+  animation-name: waveball-clicked;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes waveball-clicked {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(765px);
+  }
+}
+
+/* racer1 */
+
+.racer1-clicked {
+  animation-name: racer1-clicked;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes racer1-clicked {
+  0% {
+    transform: translate(0px 0px 0deg);
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: translate(575px 680px);
+    transform: rotateZ(13.5deg);
+  }
+  70% {
+    transform: translate(200px 224px);
+    transform: rotateZ(13.5deg);
+  }
+  85% {
+    transform: translate(367px 190px);
+    transform: rotateZ(33.5deg);
+  }
+  100% {
+    transform: translate(550px 0px);
+    transform: rotateZ(0deg);
+  }
+}
+
+/* racer2 */
+
+.racer2-clicked {
+  animation-name: racer2-clicked;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes racer2-clicked {
+  from {
+    transform: translate(0px 0px 0deg);
+  }
+  to {
+    transform: translate(575px 680px 0deg);
+  }
+  to {
+    transform: translate(163px 175px 16.5deg);
+  }
+  to {
+    transform: translate(455px 140px 29.2deg);
+  }
+  to {
+    transform: translate(530px 0px 0deg);
+  }
+}
+
+/* racer3 */
+
+.racer3-clicked {
+  animation-name: racer3-clicked;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes racer3-clicked {
+  from {
+    transform: translate(0px 0px 0deg);
+  }
+  to {
+    transform: translate(575px 680px 0deg);
+  }
+  to {
+    transform: translate(186px 210px 12.5deg);
+  }
+  to {
+    transform: translate(256px 203px 33.3deg);
+  }
+  to {
+    transform: translate(516px 0px 0deg);
+  }
+}
+
+/* racer4 */
+
+.racer4-clicked {
+  animation-name: racer4-clicked;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes racer4-clicked {
+  from {
+    transform: translate(0px 0px 0deg);
+  }
+  to {
+    transform: translate(575px 680px 0deg);
+  }
+  to {
+    transform: translate(170px 190px 8.5deg);
+  }
+  to {
+    transform: translate(105px 108px 11.8deg);
+  }
+  to {
+    transform: translate(492px 124px 26.7deg);
+  }
+}

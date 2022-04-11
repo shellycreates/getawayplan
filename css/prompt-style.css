@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  margin: 0%;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  width: 100vh;
+  height: 100vh;
+}
+
+.logos {
+  width: 270px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#escape-logo {
+  width: 80px;
+  height: 80px;
+}
+
+#gp-logo {
+  height: 50px;
+}
+
+.line {
+  background-color: #043866;
+  width: 1px;
+  height: 55px;
+}
+
+.welcome-msg {
+  align-items: center;
+  top: 35vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.drag-anim {
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  top: 53vh;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: draganim;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes draganim {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+
+.drag-anim svg{
+  width: 30px;
+  height: 30px;
+}
+
+.instruction {
+  align-items: center;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+}
+
+.prompt-bg { 
+  height: 100vh;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -100;
+  background-image: url(/svg/landing-svg.svg);
+  background-position: bottom;
+  background-size: 700px;
+  background-attachment:fixed;
+  background-repeat: repeat-x;
+}
+
+#prompt-cta {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  max-width: 350px;
+  height: fit-content;
+  align-items: center;
+}

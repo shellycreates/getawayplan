@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Getaway</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fyg-styles.css" />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/eed32a7098.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="menu" onclick="hideMenu()">
+          <div class="nav-icon">
+            <div class="menu-handle-pair">
+              <div id="menu-handle" class="green"></div>
+              <div id="menu-handle" class="green"></div>
+            </div>
+            <button class="menu-frame">
+              <p class="menu-text">MENU</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="gp-nav-icon" onclick="goToHome()">
+          <img
+            src="/svg/gp-icon.svg"
+            alt="getaway-plan-icon"
+            id="nav-gp-icon"
+          />
+        </div>
+      </div>
+      <div class="overlay-menu-bg">
+        <div class="overlay-menu">
+          <li>
+            <div class="nav-icon">
+              <div class="menu-handle-pair">
+                <div id="menu-handle" class="green"></div>
+                <div id="menu-handle" class="green"></div>
+              </div>
+              <button class="menu-frame">
+                <a class="overlay-text" href="home.html">HOME</a>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div class="nav-icon">
+              <div class="menu-handle-pair">
+                <div id="menu-handle" class="orange"></div>
+                <div id="menu-handle" class="orange"></div>
+              </div>
+              <button class="menu-frame-orange">
+                <a class="overlay-text" href="escape.html"
+                  >ESCAPE
+                  <img id="escape-arrow" src="/svg/escape-arrow.svg" alt="" />
+                </a>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div class="nav-icon">
+              <div class="menu-handle-pair">
+                <div id="menu-handle" class="green"></div>
+                <div id="menu-handle" class="green"></div>
+              </div>
+              <div class="menu-frame">
+                <div class="menu-third">
+                  <a class="menu-link" href="findyourgetaway.html"
+                    >Find Your Getaway <br />Treasure Hunt Contest</a
+                  >
+                  <a class="menu-link" href="happening.html">Happening</a>
+                  <a
+                    class="menu-link"
+                    href="https://www.ticket2u.com.my/escape-penang"
+                    >Buy ticket</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="section fyghero">
+      <div class="svgheaders">
+        <object
+          data="/svg/svg-h1-fygheader.svg"
+          type=""
+          class="svg-h1"
+        ></object>
+        <h2>Hunt and win essentials for your next vacation!</h2>
+        <p>from 13 April</p>
+        <div class="btncta">
+          <button class="yellowbtn">
+            <a href="#fyg-steps"> Find out more </a>
+          </button>
+        </div>
+      </div>
+        
+      <div class="fyghero-svg-wrap">   
+      </div>
+
+    </div>
+
+
+    <div class="section fyg-steps" id="fyg-steps">
+      <div class="svgheaders">
+        <object
+          data="/svg/svg-h1-fyg-steps.svg"
+          type=""
+          class="svg-h1"
+        ></object>
+        <h2>How to join us?</h2>
+      </div>
+      <div class="stepsboard-section">
+        <div class="stepsboards">
+          <div class="board1frame">
+            <div class="board1">
+              <div class="fyg-steps-gif">
+                <img src="" alt="" />
+              </div>
+              <h2 class="step-h1">1 Find</h2>
+              <p>
+                Interact with every elements on ESCAPE page and find the hidden
+                “Getaway” elements.
+              </p>
+            </div>
+          </div>
+          <div class="steps-handle-pair">
+            <div id="steps-handle"></div>
+            <div id="steps-handle"></div>
+          </div>
+          <div class="board1frame">
+            <div class="board1">
+              <div class="fyg-steps-gif">
+                <img src="" alt="" />
+              </div>
+              <h2 class="step-h1">2 Capture</h2>
+              <p>
+                Screenshot all the elements you think is the hidden “Getaway”.
+              </p>
+            </div>
+          </div>
+          <div class="steps-handle-pair">
+            <div id="steps-handle"></div>
+            <div id="steps-handle"></div>
+          </div>
+          <div class="board1frame">
+            <div class="board1">
+              <div class="fyg-steps-gif">
+                <img src="" alt="" />
+              </div>
+              <h2 class="step-h1">3 Submit</h2>
+              <p>
+                Upload your screen captures to the submission form at the bottom
+                of this page and wait for the result!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fyg-steps-tips">
+        <div class="tips-h1">Tips: There is more than one element</div>
+        <h3>Try your best to find all of them to win the grand prize!</h3>
+      </div>
+    </div>
+
+    <div class="section fyg-deet-section">
+      <div class="fyg-deet-inside">
+      <object data="/svg/map.svg" type="" class="gp-map" id="fyg-deet-gp-map"></object>
+      <img src="/png/search.png" alt="" class="searchicon" />
+      <div class="fyg-deets">
+        <div class="deet1">
+          <h3>Event Period</h3>
+          <p>13 April 2022 - 13 May 2022</p>
+        </div>
+        <div class="deet1">
+          <h3>Winner Reveal Date</h3>
+          <p>20 May 2022</p>
+        </div>
+        <div class="deet1">
+          <h3>Reveal Platform</h3>
+          <p>ESCAPE Getaway Plan website & <br> ESCAPE newsletter</p>
+        </div>
+      </div> 
+      </div>
+    </div>
+
+    <div class="section grandprizes">
+      <div class="svgheaders">
+        <object
+          data="/svg/svg-h1-fyg-grandprize.svg"
+          type=""
+          class="svg-h1"
+        ></object>
+        <h2>Join now and stand a chance to win!</h2>
+      </div>
+      <div class="grandprize-kv">
+        <h2>1x <br> GRAND <br> GETAWAY <br> PRIZE</h2>
+        <object
+          data="/svg/2tickets.svg"
+          type=""
+          id="tickets"
+          class="prizessvg"
+        ></object>
+        <object
+          data="/svg/suitcase.svg"
+          type=""
+          id="suitcase"
+          class="prizessvg"
+        ></object>
+        <object
+          data="/svg/tng.svg"
+          type=""
+          id="tngcards"
+          class="prizessvg"
+        ></object>
+        <object
+          data="/svg/polaroids.svg"
+          type=""
+          id="polaroids"
+          class="prizessvg"
+        ></object>
+      </div>
+
+      <div class="grandprize-prizes">
+        <div class="prize1">
+          <img
+            src="/png/prize-tickets.png"
+            alt=""
+            class="prizeimg"
+            id="prize-tickets"
+          />
+          <div class="prize-deet">
+            <h3>FREE ESCAPE Tickets</h3>
+            <p class="bold-p">1x ESCAPE Penang Big Kid Ticket</p>
+            <p class="bold-p">1x ESCAPE Penang Junior Kid Ticket</p>
+            <p>A family bonding time gifted free of charge</p>
+          </div>
+        </div>
+
+        <div class="prize2">
+          <img src="/png/prize-suitcase.png" alt="" class="prizeimg" />
+          <div class="prize-deet">
+            <h3>Limited Edition Travel Suitcase</h3>
+            <p>
+              A unique suitcase that makes your getaway easier and stylish than
+              ever
+            </p>
+          </div>
+        </div>
+
+        <div class="prize1">
+          <img src="/png/prize-tng.png" alt="" class="prizeimg" />
+          <div class="prize-deet">
+            <h3>Limited Edition TNG Card</h3>
+            <p>
+              Touch ’n Go card with RM50 credit to ensure your road trip is
+              buttery smooth
+            </p>
+          </div>
+        </div>
+
+        <div class="prize2">
+          <img src="/png/prize-polaroid.png" alt="" class="prizeimg" />
+          <div class="prize-deet">
+            <h3>Limited Edition Polaroid Film Set</h3>
+            <p>
+              10 designed polaroid films to keep your memories at ESCAPE
+              immortal
+            </p>
+          </div>
+        </div>
+        
+        <div class="gprizes-bg">
+          <div class="prize-bg"></div>
+          <div class="prize-bg"></div>
+          <div class="prize-bg"></div>
+          <div class="prize-bg"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section exciting-prizes">
+      <div class="excitingprize-kv">
+        <h2>5X EXCITING ESCAPE PRIZE</h2>
+        <object
+          data="/svg/single-ticket.svg"
+          type=""
+          id="ticket"
+          class="prizessvg"
+        ></object>
+        <object
+          data="/svg/tng.svg"
+          type=""
+          id="tngcards"
+          class="prizessvg"
+        ></object>
+        <object
+          data="/svg/polaroids.svg"
+          type=""
+          id="polaroids"
+          class="prizessvg"
+        ></object>
+      </div>
+
+      <div class="excitingprize-prizes">
+        <div class="prize1">
+          <img
+            src="/svg/bigkid-ticket.svg"
+            alt=""
+            class="prizeimg"
+            id="prize-ticket"
+          />
+          <div class="prize-deet">
+            <h3>FREE ESCAPE Tickets</h3>
+            <p class="bold-p">1x ESCAPE Penang Big Kid Ticket</p>
+            <p>Escape from the life cage and have fun</p>
+          </div>
+        </div>
+        <div class="prize2">
+          <img src="/png/prize-tng.png" alt="" class="prizeimg" />
+          <div class="prize-deet">
+            <h3>Limited Edition TNG Card</h3>
+            <p>
+              Touch ’n Go card with RM50 credit to ensure your road trip is
+              buttery smooth
+            </p>
+          </div>
+        </div>
+        <div class="prize1">
+          <img src="/png/prize-polaroid.png" alt="" class="prizeimg" />
+          <div class="prize-deet">
+            <h3>Limited Edition Polaroid Film Set</h3>
+            <p>
+              10 designed polaroid films to keep your memories at ESCAPE
+              immortal
+            </p>
+          </div>
+        </div>
+
+      <div class="eprizes-bg">
+        <div class="prize-bg"></div>
+        <div class="prize-bg"></div>
+        <div class="prize-bg"></div>
+      </div>
+
+      </div>
+
+    </div>
+
+    <div class="section startnow">
+      <div class="svgheaders">
+        <object data="/svg/svg-h1-startnow.svg" type="" class="svg-h1"></object>
+
+        <div class="btncta">
+          <button class="yellowbtn">
+            <a href="escape.html"> Let's go! </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section submission-form-section" id="fyg-submission">
+      <div class="formheader">
+        <object data="/svg/map.svg" type="" class="gp-map" id="form-gp-map"></object>
+        <h2>You’ve found all of them?</h2>
+        <h2>Submit here</h2>
+      </div>
+
+      <div class="formborder">
+        <div class="submission-form">
+          <form action="/action_page.php"><form>
+            <div class="form-row">
+            <div class="form-group" id="name-group">
+              <label for="fullname">Full name</label>
+              <input type="text" class="form-control" id="fullname" placeholder="eg: John Doe">
+            </div>
+            <div class="form-group" id="dob-group">
+              <label for="inputState">Date of birth</label>
+                <div class="form-row">
+                    <select id="dob-day" class="form-dropdown dob-dropdown">
+                    <option value="DD">DD</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    </select>
+
+                  <select id="dob-month" class="form-dropdown dob-dropdown">
+                    <option value="MM">MM</option>
+                    <option value="1">January</option>
+                    <option value="2">Febuary</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+
+                  <select id="dob-year" class="form-dropdown dob-dropdown">
+                    <option value="YYYY">YYYY</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                    <option value="1988">1988</option>
+                    <option value="1987">1987</option>
+                    <option value="1986">1986</option>
+                    <option value="1985">1985</option>
+                    <option value="1984">1984</option>
+                    <option value="1983">1983</option>
+                    <option value="1982">1982</option>
+                    <option value="1981">1981</option>
+                    <option value="1980">1980</option>
+                    <option value="1979">1979</option>
+                    <option value="1978">1978</option>
+                    <option value="1977">1977</option>
+                    <option value="1976">1976</option>
+                    <option value="1975">1975</option>
+                    <option value="1974">1974</option>
+                    <option value="1973">1973</option>
+                    <option value="1972">1972</option>
+                    <option value="1971">1971</option>
+                    <option value="1970">1970</option>
+                    <option value="1969">1969</option>
+                    <option value="1968">1968</option>
+                    <option value="1967">1967</option>
+                    <option value="1966">1966</option>
+                    <option value="1965">1965</option>
+                    <option value="1964">1964</option>
+                    <option value="1963">1963</option>
+                    <option value="1962">1962</option>
+                    <option value="1961">1961</option>
+                    <option value="1960">1960</option>
+                    <option value="1959">1959</option>
+                  </select>
+              </div>
+            </div>
+
+            </div>
+            <div class="form-group">
+              <label for="contactnumber">Contact number</label>
+              <div class="form-row">
+                <p>+60</p>
+                <input type="text" class="form-control" id="contactnumber" placeholder="eg: 601x-xxxxxxx">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail address</label>
+              <input type="text" class="form-control" id="email" placeholder="eg: johndoe@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address line 1</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Unit, Street">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address line 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-3" id="zip-group">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+              <div class="form-group col-md-3" id="city-group">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group" id="state-group">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option value="Johor">Johor</option>
+                  <option value="Kedah">Kedah</option>
+                  <option value="Kelantan">Kelantan</option>
+                  <option value="Kuala Lumpur">Kuala Lumpur</option>
+                  <option value="Labuan">Labuan</option>
+                  <option value="Melaka">Melaka</option>
+                  <option value="Negeri Sembilan">Negeri Sembilan</option>
+                  <option value="Pahang">Pahang</option>
+                  <option value="Penang">Penang</option>
+                  <option value="Perak">Perak</option>
+                  <option value="Perlis">Perlis</option>
+                  <option value="Putrajaya">Putrajaya</option>
+                  <option value="Sabah">Sabah</option>
+                  <option value="Sarawak">Sarawak</option>
+                  <option value="Selangor">Selangor</option>
+                  <option value="Terengganu">Terengganu</option>
+                </select>
+              </div>
+            </div>
+            <div class="agreements">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                I agree to the terms of the <a href="privacypolicy.html">Privacy Policy</a> and <a href="tnc.html">Terms of Service</a>.*
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+              I want to receive more fresh news from ESCAPE and get double chance for winning Find the “Getaway Plan” event.              </label>
+            </div>
+            </div>
+            <button type="submit" class="yellowbtn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="section socialshare">
+      <div class="svgheaders">
+        <object data="/svg/svg-h1-social.svg" type="" class="svg-h1"></object>
+      </div>
+      <ul class="socials">
+        <li class="socialicon">
+          <a
+            href="http:////www.facebook.com/sharer/sharer.php?u=http://www.happening.html"
+            target="_blank"
+            ><img alt="facebook" src="/png/fb.png"
+          /></a>
+        </li>
+        <li class="socialicon">
+          <a
+            href="http:////www.facebook.com/sharer/sharer.php?u=http://www.happening.html"
+            target="_blank"
+            ><img alt="twitter" src="/png/twitter.png"
+          /></a>
+        </li>
+        <li class="socialicon">
+          <a
+            href="http:////www.facebook.com/sharer/sharer.php?u=http://www.happening.html"
+            target="_blank"
+            ><img alt="whatsapp" src="/png/whatsapp.png"
+          /></a>
+        </li>
+        <li class="socialicon">
+          <a
+            href="http:////www.facebook.com/sharer/sharer.php?u=http://www.happening.html"
+            target="_blank"
+            ><img alt="mail" src="/png/mail.png"
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <div class="sitemap">
+        <div class="footerlogos">
+          <a href="home.html">
+            <img src="/svg/gp-white-logo.svg" alt="" class="gp-footer" />
+          </a>
+
+          <a href="http://escape.my">
+            <img
+              src="/png/escape-white-logo.png"
+              alt=""
+              class="escape-footer"
+            />
+          </a>
+        </div>
+
+        <div class="links-group">
+          <ul class="footer-links">
+            <li class="footerlink">
+              <a href="home.html">HOME</a>
+            </li>
+            <li class="footerlink">
+              <a href="escape.html" target="_blank">ESCAPE</a>
+            </li>
+            <li class="footerlink">
+              <a href="privacypolicy.html">Privacy Policy</a>
+            </li>
+            <li class="footerlink">
+              <a href="tnc.html">Terms and Conditions</a>
+            </li>
+          </ul>
+
+          <ul class="footer-links">
+            <li class="footerlink">
+              <a href="findyourgetaway.html" class="active-footerlink">Find Your Getaway</a>
+            </li>
+            <li class="footerlink">
+              <a href="happening.html">Happening</a>
+            </li>
+          </ul>
+
+          <ul class="footer-links">
+            <li class="footerlink">
+              <a href="https://www.escape.my">ESCAPE Penang</a>
+            </li>
+            <li class="footerlink">
+              <a href="happening.html">Get tickets</a>
+            </li>
+            <li class="footerlink">
+              <a href="https://www.escape.my/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footersocial">
+        <ul>
+          <li class="footersocialicon">
+            <a href="https://www.facebook.com/escape.my" target="_blank"
+              ><img alt="facebook" src="/png/social-fb.png"
+            /></a>
+          </li>
+
+          <li class="footersocialicon">
+            <a
+              href="https://www.youtube.com/channel/UCD05wL1QXfhTMzfejN0JI0A"
+              target="_blank"
+              ><img alt="youtube" src="/png/social-yt.png"
+            /></a>
+          </li>
+
+          <li class="footersocialicon">
+            <a href="https://vt.tiktok.com/ZSe2TuH2r/" target="_blank"
+              ><img alt="tiktok" src="/png/social-tiktok.png"
+            /></a>
+          </li>
+
+          <li class="footersocialicon">
+            <a href="https://www.instagram.com/escapemy/" target="_blank"
+              ><img alt="instagram" src="/png/social-ig.png"
+            /></a>
+          </li>
+
+          <li class="footersocialicon">
+            <a
+              href="https://www.tripadvisor.com.my/Attraction_Review-g4975755-d3729571-Reviews-ESCAPE-Teluk_Bahang_Penang_Island_Penang.html"
+              target="_blank"
+              ><img alt="tripadvisor" src="/png/social-tripadvisor.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="disclaimer">
+        Disclaimer: This website is created for a Multimedia University
+        Advertising Design Final Year Project.
+      </p>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+
+  </body>
+</html>

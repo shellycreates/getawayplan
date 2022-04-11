@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Hynings Handwriting V2";
+  src: url(/font/HyningsHandwritingV2-Regular.ttf);
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+/*svg*/
+
+#chairlift {
+  position: absolute;
+  left: 52.42%;
+  top: -2%;
+  z-index: 1;
+  max-height: 40vh;
+}
+
+#home-svg {
+  height: 120%;
+  align-items: center;
+  object-fit: cover;
+}
+
+#note1 {
+  filter: drop-shadow(5, 5, 5);
+}
+
+/* #leaf {
+  animation-name: leaf-rotation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transform-origin: center;
+}
+
+@keyframes leaf-rotation {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+} */
+
+
+
+/*font*/
+
+.step-h2 {
+  font-family: Hynings Handwriting V2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px !important;
+  line-height: 41px;
+  text-align: center;
+  color: #f9b84e;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 41px;
+  text-align: center;
+  color: #f48e9f;
+}
+
+h2 {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px !important;
+  line-height: 44px;
+  text-align: center;
+  color: #043866;
+}
+
+h3 {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  color: black;
+}
+
+p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+.p-white {
+  color: white;
+  text-align: center;
+}
+
+.tips-h1 {
+  margin: 30px 0 10px 0;
+  font-family: "Hynings Handwriting V2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 41px;
+  text-align: center;
+  color: #1471d0;
+}
+
+/*section*/
+
+.menu-handle-pair {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  margin-right: -1px;
+  height: calc(100% - 16px);
+}
+
+#menu-handle {
+  position: static;
+  width: 30px;
+  height: 8px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #043866;
+}
+
+.green {
+  background: #66ccb4;
+}
+
+.orange {
+  background: #f9b84e;
+}
+
+/*nav*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 20vh;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+}
+
+.navbar {
+  top: 0;
+  padding-top: 5vh !important;
+  padding-bottom: 5vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 54.01%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.menu {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  /* cursor: pointer; */
+}
+
+.gp-nav-icon {
+  position: absolute;
+  margin-top: 5vh;
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  left: 50%;
+  top: 0;
+  display: flex;
+}
+
+#nav-gp-icon {
+  width: 60px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 0;
+  position: static;
+  background: #1471d0;
+  border: 1px solid #043866;
+  box-sizing: border-box;
+  font-family: Hynings Handwriting V2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-third {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 0 30px;
+  position: static;
+  background: #1471d0;
+  border: 1px solid #043866;
+  box-sizing: border-box;
+  font-family: Hynings Handwriting V2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-link {
+  font-family: Hynings Handwriting V2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 0 0 30px 0;
+  width: 220px;
+  transition: 0.2s;
+}
+
+.menu-link:hover {
+  color: #f9b84e;
+}
+
+.menu-frame {
+  background: #66ccb4;
+  border: 1px solid #043866;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.menu-frame-orange {
+  background: #f9b84e;
+  border: 1px solid #043866;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+/*overlay menu*/
+
+.menu-text a {
+  width: 220px;
+}
+
+.overlay-menu-bg {
+  background-color: rgba(0,0,0,0.15);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s;
+}
+
+.overlaybg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay-menu {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  left: 0;
+  top: 50%;
+  width: fit-content;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in;
+}
+
+.overlay-active {
+  transform: translateX(0%);
+}
+
+.overlay-menu li {
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.overlay-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 0;
+  position: static;
+  background: #1471d0;
+  border: 1px solid #043866;
+  box-sizing: border-box;
+  font-family: Hynings Handwriting V2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 280px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.overlay-text:hover {
+  color: #f9b84e;
+}
+
+
+.svg-h1 {
+  margin: auto;
+  height: 120px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.svgheaders {
+  padding-bottom: 80px;
+  align-items: center;
+}
+
+/* button */
+
+button {
+cursor: pointer;
+}
+
+.yellowbtn {
+  background: #f9b84e;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  border: none;
+}
+
+.yellowbtn:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.yellowbtn a{
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.yellowbtn a:hover {
+  color: white;
+}
+
+.btncta {
+  width: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btncta:hover {
+  transform: scale(1.05);
+}
+
+.underlined-btn, a{
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  color: black;
+  transition: 0.2s;
+}
+
+.underlined-btn a:hover {
+  color: #f9b84e;
+}
+
+/* social */
+
+.socialshare {
+  width: 100vw;
+  padding: 150px 0;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+
+.socialshare .svgheaders {
+  padding-bottom: 30px;
+  margin: auto;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  margin: auto;
+  padding: 0;
+}
+
+.socialicon img {
+  width: 55px;
+}
+
+.socialicon:hover {
+  transform: scale(1.05);
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  /* padding: 100px 250px 30px 250px; */
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin: auto;
+  background: #1471d0;
+  box-sizing: border-box;
+}
+
+.sitemap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  max-width: 1000px;
+  align-items: flex-start;
+}
+
+.footerlogos {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.gp-footer {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.escape-footer {
+  width: 120px;
+}
+
+.links-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 50px;
+  padding: 0;
+}
+
+.active-footerlink {
+  color: #f9b84e !important;
+}
+
+.footerlink {
+  margin-bottom: 20px;
+}
+
+.footerlink a {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.footerlink a:hover {
+  color: #f9b84e;
+}
+
+/* footersocials */
+
+.footersocial {
+  width: 300px;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.footersocial ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footersocialicon img {
+  width: 35px;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: white;
+}

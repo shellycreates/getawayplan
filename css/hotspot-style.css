@@ -1,0 +1,248 @@
+.section-home-hotspots {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1000px;
+  margin: auto;
+  z-index: 50;
+}
+
+.hotspot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  /* width: fit-content; */
+  height: fit-content;
+  /* pointer-events: none; */
+}
+
+.hotspot-hover {
+  z-index: 10;
+  margin: auto;
+  margin-top: -24px;
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px solid #043866;
+  border-radius: 10px;
+  align-items: center;
+  width: 250px;
+  padding: 30px 40px 20px 40px;
+  filter: drop-shadow(6px 4px 5px rgba(0, 0, 0, 0.15));
+  display: none;
+}
+
+.hotspot-hover h2 {
+  margin-bottom: 10px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px !important;
+  line-height: 30px;
+  text-align: center;
+  color: #1471d0;
+}
+
+.hotspot-hover p {
+  margin: 0;
+}
+
+.hotspot-trigger {
+  background: rgba(249, 212, 58, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #043866;
+  z-index: 20;
+  cursor: pointer;
+  animation-name: hotspot-pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes hotspot-pulse {
+  from{
+    background: rgba(249, 212, 58, 0.5);
+  }
+  to{
+    background: rgba(249, 212, 58, 0);
+    transform: scale(1.1);
+  }
+}
+
+.hotspot-trigger-center {
+  background-color: #f9b84e;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1.5px solid #043866;
+  box-sizing: border-box;
+}
+
+.hotspot-trigger:hover + .hotspot-hover {
+  display: block;
+}
+
+/* home hotspots */
+
+/* escape here button */
+
+#escape-button {
+  z-index: 0;
+  left: 30%;
+  top: 30%;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#escape-button:hover {
+  transform: scale(1.05);
+}
+
+#escape-arrow {
+  height: 24px;
+  margin: 0 10px;
+}
+
+#escape-button a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#escape-button p {
+  font-family: "Hynings Handwriting V2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 24px;
+  color: #f48e9f;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#escape-button p:hover {
+  color: black;
+}
+
+/* about hotspot */
+
+#hotspot-about {
+  top: 45%;
+  left: 40%;
+  height: fit-content;
+  width: 250px;
+}
+
+/* #hover-about {
+  margin-top: -24px;
+} */
+
+/* hpn hotspot */
+
+#hotspot-hpn {
+  top: 60%;
+  left: 19%;
+  height: fit-content;
+  width: 250px;
+}
+
+/* #hover-hpn {
+  margin-top: -24px;
+} */
+
+/* escape hotspot */
+
+.section-escape-hotspots {
+  /* display: none; */
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* go home */
+
+#go-home-button {
+  top: 450px;
+  left: 135px;
+  width: fit-content;
+  transition: 0.2s;
+}
+
+#go-home-button:hover {
+  transform: scale(1.05);
+}
+
+#go-home-button a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#go-home-button p{
+  font-family: "Hynings Handwriting V2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 24px;
+  color: #043866;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#go-home-button p:hover {
+  color: #f9b84e;
+}
+
+/* thelongest */
+
+#hotspot-thelongest {
+  top: 660px;
+  left: 385px;
+}
+
+#hotspot-chairlift {
+  top: 470px;
+  left: 670px;
+}
+
+#hotspot-tubbyracer {
+  top: 320px;
+  left: 2120px;
+}
+
+#hotspot-waveball {
+  top: 785px;
+  left: 2485px
+}
+
+#hotspot-speedracer {
+  top: 170px;
+  left: 3000px;
+}
+
+#hotspot-lazyriver {
+  top: 330px;
+  left: 3620px;
+}
