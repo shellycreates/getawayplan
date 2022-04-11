@@ -91,107 +91,6 @@
         <p class="p-white">Keep scrolling to win prizes! ></p>
       </div>
 
-      <!-- <div class="section-escape-hotspots"> -->
-        <!-- go home hotspot -->
-
-        <div class="hotspot" id="go-home-button" onclick="goToHome()">
-          <a href="home.html">
-            <img id="escape-arrow" src="./svg/escape-arrow.svg" alt="" />
-            <p class="gohome-prompt">go home</p>
-          </a>
-        </div>
-
-        <!-- thelongest hotspot -->
-
-        <div class="hotspot" id="hotspot-thelongest">
-          <div class="hotspot-trigger" id="trigger-thelongest">
-            <div class="hotspot-trigger-center"></div>
-          </div>
-
-          <div class="hotspot-hover" id="hover-thelongest">
-            <div class="modal-content">
-              <h2 class="step-h1">The Longest</h2>
-              <p>learn more</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- chairlift hotspot -->
-
-        <div class="hotspot" id="hotspot-chairlift">
-          <div class="hotspot-trigger" id="trigger-chairlift">
-            <div class="hotspot-trigger-center"></div>
-          </div>
-
-          <div class="hotspot-hover" id="hover-chairlift">
-            <div class="modal-content">
-              <h2 class="step-h1">Chairlift</h2>
-              <p>learn more</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- tubbyracer hotspot -->
-
-        <div class="hotspot" id="hotspot-tubbyracer">
-          <div class="hotspot-trigger" id="trigger-tubbyracer">
-            <div class="hotspot-trigger-center"></div>
-          </div>
-
-          <div class="hotspot-hover" id="hover-tubbyracer">
-            <div class="modal-content">
-              <h2 class="step-h1">Tubby Racer</h2>
-              <p>learn more</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- waveball hotspot -->
-
-        <div class="hotspot" id="hotspot-waveball">
-          <div class="hotspot-trigger" id="trigger-waveball">
-            <div class="hotspot-trigger-center"></div>
-          </div>
-
-          <div class="hotspot-hover" id="hover-waveball">
-            <div class="modal-content">
-              <h2 class="step-h1">Wave Ball</h2>
-              <p>learn more</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- speedracer hotspot -->
-
-        <div class="hotspot" id="hotspot-speedracer">
-          <div class="hotspot-trigger" id="trigger-speedracer">
-            <div class="hotspot-trigger-center"></div>
-          </div>
-
-          <div class="hotspot-hover" id="hover-speedracer">
-            <div class="modal-content">
-              <h2 class="step-h1">Speed Racer</h2>
-              <p>learn more</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- lazyriver hotspot -->
-
-        <div class="hotspot" id="hotspot-lazyriver">
-          <div class="hotspot-trigger" id="trigger-lazyriver">
-            <div class="hotspot-trigger-center"></div>
-          </div>
-
-          <div class="hotspot-hover" id="hover-lazyriver">
-            <div class="modal-content">
-              <h2 class="step-h1">Lazy River</h2>
-              <p>learn more</p>
-            </div>
-          </div>
-        </div>
-      <!-- </div> -->
-
       <!-- test individual hotspot_s -->
 
       <!-- go home hotspot -->
@@ -2484,7 +2383,7 @@
                   </g>
                 </g>
               </g>
-              <g id="pole" class="pole-draggable">
+              <g id="pole" onclick="clickPole()">
                 <path
                   id="Vector_224"
                   d="M230.8 603.4V526.1H52.5996V603.4H230.8Z"

@@ -86,18 +86,14 @@ lazyRiverClose.addEventListener("click", function () {
 
 // pole drag
 
-// $('.pole-draggable').draggable({
-//   axis: "y"
-// });
 
-// $('.pole-draggable').on('mousedown', function() {
-//   var x1 = x2 = $(".pole-draggable").position().left;
-//   var y1 = $(".pole-draggable").position().top;
-//   var y2 = ($(window).height() + $(".pole-draggable").position().top);
-//   $(".pole-draggable").draggable('option', 'containment', [x1, y1, x2, y2]);
-// });
 
 // elements click
+
+  // pole
+  function clickPole() {
+    document.getElementById('pole').classList.add('pole-clicked');
+  }
 
   // longest float
   function clickLongestFloat() {

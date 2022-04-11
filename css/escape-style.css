@@ -180,12 +180,10 @@ body {
 
 /* elements interactions */
 
-.pole-draggable {
-  position: absolute;
-  display: block;
-}
 
-#escape-svg #longest-float,
+#escape-svg 
+#pole,
+#longest-float,
 #chairlift,
 #tubbies,
 #wave-ball,
@@ -195,6 +193,25 @@ body {
 #racer-4 {
   cursor: pointer;
   display: block;
+}
+
+/* pole */
+
+.pole-clicked {
+  animation-name: pole-clicked;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pole-clicked {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, 100px);
+  }
 }
 
 /* slides */
