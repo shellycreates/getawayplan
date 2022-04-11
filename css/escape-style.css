@@ -43,6 +43,7 @@ body {
   animation-delay: 5s;
   animation-fill-mode: forwards;
   z-index: 110;
+  overflow: hidden;
 }
 
 @keyframes fadeout {
