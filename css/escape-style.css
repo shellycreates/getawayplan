@@ -90,7 +90,7 @@ body {
   padding: 15px;
   background: #1471d0;
   border: 1px solid #043866;
-  background-image: url(../svg/noticeboard-lines.svg);
+  background-image: url(/svg/noticeboard-lines.svg);
   background-position: center;
   background-size: cover;
   background-repeat: none;

@@ -9,7 +9,7 @@
   height: 90vh;
   margin: auto;
   padding-top: 100px;
-  background: url(../svg/bushesbg/fyg-hero-bushes.svg);
+  background: url(./svg/bushesbg/fyg-hero-bushes.svg);
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: 520px;
@@ -38,7 +38,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: url(../svg/fyg-hero-svg.svg);
+  background: url(./svg/fyg-hero-svg.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,19 +100,19 @@
 }
 
 #fyg-step1 {
-  background: url(../gif/fyg-step1.gif);
+  background: url(./gif/fyg-step1.gif);
   background-size: cover;
   background-position: center;
 }
 
 #fyg-step2 {
-  background: url(../gif/fyg-step2.gif);
+  background: url(./gif/fyg-step2.gif);
   background-size: cover;
   background-position: center;
 }
 
 #fyg-step3 {
-  background: url(../gif/fyg-step3.gif);
+  background: url(./gif/fyg-step3.gif);
   background-size: cover;
   background-position: center;
 }
@@ -160,7 +160,7 @@
   margin-right: auto;
   position: relative;
   display: flex;
-  background: url(../svg/bushesbg/fyg-deet.svg);
+  background: url(./svg/bushesbg/fyg-deet.svg);
   background-size: 1500px;
   background-repeat: repeat-x;
   background-position: center;
@@ -340,7 +340,7 @@
 }
 
 .prize-bg:nth-child(1) {
-  background: url(../svg/bushesbg/lightbush1.svg);
+  background: url(./svg/bushesbg/lightbush1.svg);
   background-position-x: center;
   background-size: 1000px;
   top: 200px;
@@ -350,7 +350,7 @@
 /* gprizes */
 
 .prize-bg:nth-child(2) {
-  background: url(../svg/bushesbg/darkbush1.svg);
+  background: url(./svg/bushesbg/darkbush1.svg);
   background-position-x: 55%;
   background-size: 1000px;
   top: 480px;
@@ -359,7 +359,7 @@
 
 
 .prize-bg:nth-child(3) {
-  background: url(../svg/bushesbg/lightbush2.svg);
+  background: url(./svg/bushesbg/lightbush2.svg);
   background-position-x: center;
   background-size: 1000px;
   top: 795px;
@@ -368,7 +368,7 @@
 
 
 .prize-bg:nth-child(4) {
-  background: url(../svg/bushesbg/darkbush2.svg);
+  background: url(./svg/bushesbg/darkbush2.svg);
   background-position-x: 45%;
   background-size: 1000px;
   top: 1180px;
@@ -378,7 +378,7 @@
 /* eprizes */
 
 .eprizes-bg .prize-bg:nth-child(1) {
-  background: url(../svg/bushesbg/lightbush1.svg);
+  background: url(./svg/bushesbg/lightbush1.svg);
   background-position-x: 35%;
   background-size: 1000px;
   top: 0;
@@ -386,7 +386,7 @@
 }
 
 .eprizes-bg .prize-bg:nth-child(2) {
-  background: url(../svg/bushesbg/darkbush1.svg);
+  background: url(./svg/bushesbg/darkbush1.svg);
   background-position-x: 35%;
   background-size: 1000px;
   top: 265px;
@@ -395,7 +395,7 @@
 
 
 .eprizes-bg .prize-bg:nth-child(3) {
-  background: url(../svg/bushesbg/lightbush2.svg);
+  background: url(./svg/bushesbg/lightbush2.svg);
   background-position-x: center;
   background-size: 1000px;
   top: 545px;
