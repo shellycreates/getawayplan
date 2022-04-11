@@ -519,6 +519,9 @@
 
 .form-group {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .form-group label {
@@ -539,6 +542,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+}
+
+#uploadImgFormControl {
+  border: none;
+  border-radius: 0;
 }
 
 .form-group select {
