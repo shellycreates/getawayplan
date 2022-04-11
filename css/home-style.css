@@ -23,7 +23,7 @@ body {
     position: absolute;
     top: 0;
     z-index: -100;
-    background-image: url(./svg/home.svg);
+    background-image: url(../svg/home.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

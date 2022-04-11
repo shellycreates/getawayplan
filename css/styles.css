@@ -5,7 +5,8 @@
 
 @font-face {
   font-family: "Hynings Handwriting V2";
-  src: url(/font/HyningsHandwritingV2-Regular.ttf);
+  /* src: url(/font/HyningsHandwritingV2-Regular.ttf); */
+  src: url(../font/HyningsHandwritingV2-Regular.ttf);
 }
 
 .section {
