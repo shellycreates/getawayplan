@@ -73,7 +73,7 @@ p {
   align-items: center;
   justify-content: center;
   margin: auto;
-  background: url(./svg/bushesbg/lightbush1.svg);
+  background: url(../svg/bushesbg/lightbush1.svg);
   background-repeat: repeat-x;
   background-position-x: center;
   /* background-position-y: -15px; */
@@ -237,7 +237,7 @@ ul {
   width: 100%;
   /* margin: 80px auto; */
   padding: 80px 0 50px 0;
-  background: url(./svg/bushesbg/lightbush3.svg);
+  background: url(../svg/bushesbg/lightbush3.svg);
   background-repeat: repeat-x;
   background-size: 1020px;
   background-position-x: 60%;
@@ -329,7 +329,7 @@ ul {
 }
 
 .prize-bg:nth-child(1) {
-  background: url(./svg/bushesbg/lightbush1.svg);
+  background: url(../svg/bushesbg/lightbush1.svg);
   background-position-x: center;
   background-size: 1000px;
   top: 0;
@@ -337,7 +337,7 @@ ul {
 }
 
 .prize-bg:nth-child(2) {
-  background: url(./svg/bushesbg/darkbush1.svg);
+  background: url(../svg/bushesbg/darkbush1.svg);
   background-position-x: 55%;
   background-size: 1000px;
   top: 320px;
@@ -346,7 +346,7 @@ ul {
 
 
 .prize-bg:nth-child(3) {
-  background: url(./svg/bushesbg/lightbush2.svg);
+  background: url(../svg/bushesbg/lightbush2.svg);
   background-position-x: center;
   background-size: 1000px;
   top: 620px;
@@ -355,7 +355,7 @@ ul {
 
 
 .prize-bg:nth-child(4) {
-  background: url(./svg/bushesbg/darkbush2.svg);
+  background: url(../svg/bushesbg/darkbush2.svg);
   background-position-x: 45%;
   background-size: 1000px;
   top: 1010px;
@@ -482,7 +482,7 @@ ul {
 }
 
 .board1 {
-  background: url(./svg/boardbg.svg);
+  background: url(../svg/boardbg.svg);
   background-size: cover;
   background-repeat: none;
   width: 300px;
@@ -557,7 +557,7 @@ ul {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: url(./svg/hpn-cal-svg.svg);
+  background: url(../svg/hpn-cal-svg.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
