@@ -35,25 +35,6 @@
   filter: drop-shadow(5, 5, 5);
 }
 
-/* #leaf {
-  animation-name: leaf-rotation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  transform-origin: center;
-}
-
-@keyframes leaf-rotation {
-  from {
-    transform: rotateZ(0deg);
-  }
-
-  to {
-    transform: rotateZ(360deg);
-  }
-} */
-
-
 
 /*font*/
 
@@ -61,8 +42,10 @@
   font-family: Hynings Handwriting V2;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px !important;
-  line-height: 41px;
+  /* font-size: 35px !important; */
+  font-size: 2.2em !important;
+  /* line-height: 41px; */
+  line-height: 1.1em;
   text-align: center;
   color: #f9b84e;
   margin-bottom: 15px;
@@ -72,8 +55,9 @@ h1 {
   font-family: "Avenir";
   font-style: normal;
   font-weight: 800;
-  font-size: 50px;
-  line-height: 41px;
+  /* font-size: 50px; */
+  /* line-height: 41px; */
+  font-size: 2.3em;
   text-align: center;
   color: #f48e9f;
 }
@@ -82,8 +66,9 @@ h2 {
   font-family: "Avenir";
   font-style: normal;
   font-weight: 800;
-  font-size: 28px !important;
-  line-height: 44px;
+  /* font-size: 28px !important; */
+  /* line-height: 44px; */
+  font-size: 1.75em;
   text-align: center;
   color: #043866;
 }
@@ -92,8 +77,10 @@ h3 {
   font-family: Avenir;
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 25px;
+  font-size: 1.5em;
+  line-height: 1.1em;
+  /* font-size: 24px; */
+  /* line-height: 25px; */
   text-align: center;
   color: black;
 }
@@ -102,7 +89,8 @@ p {
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.12em;
   text-align: center;
   margin: 0;
 }
@@ -117,8 +105,10 @@ p {
   font-family: "Hynings Handwriting V2";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 41px;
+  /* font-size: 40px; */
+  font-size: 2.5em;
+  /* line-height: 41px; */
+  line-height: 1.2em;
   text-align: center;
   color: #1471d0;
 }
@@ -202,12 +192,14 @@ nav {
   height: fit-content;
   cursor: pointer;
   left: 50%;
+  transform: translateX(-50%);
   top: 0;
   display: flex;
 }
 
 #nav-gp-icon {
-  width: 60px;
+  /* width: 60px; */
+  height: 55px;
   margin: auto;
 }
 
@@ -229,7 +221,8 @@ li {
   font-family: Hynings Handwriting V2;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
+  font-size: 1.6em;
+  /* font-size: 26px; */
   text-align: center;
   color: white;
   text-decoration: none;
@@ -250,7 +243,8 @@ li {
   font-family: Hynings Handwriting V2;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 1.6em;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -260,7 +254,8 @@ li {
   font-family: Hynings Handwriting V2;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 1.6em;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -352,7 +347,8 @@ li {
   font-family: Hynings Handwriting V2;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 1.6em;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -373,6 +369,27 @@ li {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width:768px) {
+  .svg-h1 {
+    /* height: 5em; */
+    height: auto;
+    width: 85%;
+    }
+  h2 {
+    font-size: 1.5em;
+  }
+  .svgheaders h2 {
+    width: 80% !important;
+    margin: auto;
+  }
+  .yellowbtn a {
+    font-size: 1em;
+  }
+  .svgheaders {
+    padding-bottom: 50px !important;
+  }
+}
+
 .svgheaders {
   padding-bottom: 80px;
   align-items: center;
@@ -391,7 +408,8 @@ cursor: pointer;
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.12em;
   text-align: center;
   margin: auto;
   border: none;
@@ -426,7 +444,8 @@ cursor: pointer;
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.12em;
   text-align: center;
   margin: 0;
   text-decoration: underline;
@@ -537,7 +556,8 @@ cursor: pointer;
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.12em;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -566,6 +586,69 @@ cursor: pointer;
 }
 
 .disclaimer {
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 0.88em;
   color: white;
+}
+
+@media screen and (max-width:768px) {
+  .gp-nav-icon {
+    left: auto;
+    right: 8%;
+    transform: none;
+  }
+  .socialshare {
+    padding: 100px 0px;
+  }
+  .socialshare .svgheaders {
+    padding-top: 0px;
+  }
+  .socialshare .svg-h1 {
+    margin-bottom: 0px;
+  }
+  .socials {
+    width: 70vw !important;
+  }
+  .socials img {
+    width: 40px !important;
+  }
+  .footer {
+    padding-top: 80px;
+  }
+  .sitemap {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .footerlogos {
+    flex-direction: row !important;
+    align-items: flex-end !important;
+    justify-content: space-between;
+  }
+  .escape-footer {
+    width: 100px;
+  }
+  .gp-footer {
+    margin-bottom: 0px !important;
+    margin-right: 30px;
+  }
+  .links-group {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .footer-links {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .footersocial ul {
+    padding: 0px !important;
+  }
+  .disclaimer {
+    width: 75vw;
+    margin: auto;
+  }
+  .tips-h1 {
+    font-size: 2em;
+  }
 }

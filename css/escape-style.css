@@ -55,6 +55,21 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .scroll-alert {
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .noticeboard {
+    max-width: 95vw !important;
+    right: 3vw !important;
+    bottom: 80px !important;
+  }
+
+}
+
 .scroll-alert p {
   padding: 10px 30px;
 }
@@ -65,11 +80,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 400px;
   height: fit-content;
   /* box-sizing: border-box; */
-  bottom: 0;
+  bottom: 0px;
+  top: auto;
   right: 50px;
   position: absolute;
   z-index: 110;
@@ -130,8 +146,9 @@ body {
 .noticeboard-legs {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  height: 100px;
   width: calc(100% - 30px);
   margin-top: -1px;
 }
@@ -181,9 +198,7 @@ body {
 
 /* elements interactions */
 
-
-#escape-svg 
-#pole,
+#escape-svg #pole,
 #longest-float,
 #chairlift,
 #tubbies,
@@ -200,7 +215,7 @@ body {
 
 .pole-clicked {
   animation-name: pole-clicked;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;

@@ -39,9 +39,32 @@
   filter: drop-shadow(6px 4px 15px rgba(0,0,0,0.3));
 }
 
+@media screen and (max-width:768px) {
+  .section-modal {
+    padding: 10%;
+    width: auto;
+  }
+  .modal {
+    width: 100%;
+  }
+}
+
 .bg-active {
   visibility: visible;
   opacity: 1;
+}
+
+.step-h1 {
+  margin-bottom: 20px;
+  font-family: "Hynings Handwriting V2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2em;
+  line-height: 1.1em;
+  /* font-size: 35px;
+  line-height: 41px; */
+  text-align: center;
+  color: #1471d0;
 }
 
 #closebtn {
@@ -72,17 +95,6 @@
 
 .closebtn:hover {
   transform: scale(1.1);
-}
-
-.step-h1 {
-  margin-bottom: 20px;
-  font-family: "Hynings Handwriting V2";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 41px;
-  text-align: center;
-  color: #1471d0;
 }
 
 .modal-content p {

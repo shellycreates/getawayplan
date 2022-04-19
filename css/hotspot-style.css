@@ -53,7 +53,8 @@
   font-family: Avenir;
   font-style: normal;
   font-weight: 800;
-  font-size: 24px !important;
+  font-size: 1.5em !important;
+  /* font-size: 24px !important; */
   line-height: 30px;
   text-align: center;
   color: #1471d0;
@@ -114,15 +115,19 @@
   transition: 0.2s;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #escape-button {
-    left: 10%;
-  };
+    top: 29%;
+    left: 5%;
+  }
   #hotspot-about {
-    left: 30%;
-  };
+    left: 25% !important;
+  }
   #hotspot-hpn {
-    left: 1%;
+    left: -17% !important;
+  }
+  #escape-button p{
+    font-size: 1.5em !important;
   }
 }
 
@@ -146,8 +151,10 @@
   font-family: "Hynings Handwriting V2";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 24px;
+  font-size: 1.62em;
+  line-height: 1.5em;
+  /* font-size: 26px;
+  line-height: 24px; */
   color: #f48e9f;
   text-decoration: none;
   cursor: pointer;
@@ -218,8 +225,10 @@
   font-family: "Hynings Handwriting V2";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 24px;
+  font-size: 1.62em;
+  line-height: 15em;
+  /* font-size: 26px;
+  line-height: 24px; */
   color: #043866;
   text-decoration: none;
   cursor: pointer;
