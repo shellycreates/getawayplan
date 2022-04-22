@@ -41,11 +41,17 @@
 
 @media screen and (max-width:768px) {
   .section-modal {
-    padding: 10%;
+    padding: 5%;
     width: auto;
   }
   .modal {
     width: 100%;
+    height: 90%;
+    margin-top: 0 !important;
+  }
+  .escape-body .modal {
+    height: fit-content;
+    margin: auto !important;
   }
 }
 
@@ -59,7 +65,7 @@
   font-family: "Hynings Handwriting V2";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.2em;
+  font-size: 2.2em !important;
   line-height: 1.1em;
   /* font-size: 35px;
   line-height: 41px; */

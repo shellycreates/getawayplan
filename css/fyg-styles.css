@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .section {
   margin: 100px auto;
 }
@@ -666,6 +673,12 @@
 
 
 @media screen and (max-width: 768px) {
+  .fyghero {
+    height: 100vh;
+  }
+  .fyghero .svgheaders {
+    padding-top: 50px;
+  }
   .stepsboards {
     flex-direction: column;
     height: fit-content;

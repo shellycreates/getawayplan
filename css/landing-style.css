@@ -23,10 +23,9 @@ a {
   background-image: url(../svg/landing-svg.svg);
   background-position: bottom;
   background-size: 700px;
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-repeat: repeat-x;
 }
-
 
 #landing-text {
   position: absolute;
@@ -44,4 +43,20 @@ a {
   transform: translate(-50%, -5%);
   max-width: 350px;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #chairlift {
+    height: 30vh;
+  }
+  #landing-text {
+    width: 75vw;
+    top: 38% !important;
+    transform: translate(-50%, 0) !important;
+  }
+  #landing-text h2 {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

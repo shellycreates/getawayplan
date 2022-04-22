@@ -112,3 +112,15 @@ a {
   height: fit-content;
   align-items: center;
 }
+
+@media screen and (max-width: 414px) {
+  .logos {
+    top: 10vh;
+  }
+  .welcome-msg {
+    top: 30vh;
+  }
+  .instruction {
+    top: 63vh;
+  }
+}

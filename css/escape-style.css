@@ -55,21 +55,6 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .scroll-alert {
-    top: 15vh;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .noticeboard {
-    max-width: 95vw !important;
-    right: 3vw !important;
-    bottom: 80px !important;
-  }
-
-}
-
 .scroll-alert p {
   padding: 10px 30px;
 }
@@ -424,5 +409,18 @@ g #chairlift {
   }
   to {
     transform: translate(492px 124px 26.7deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-alert {
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .noticeboard {
+    max-width: 95vw !important;
+    right: 3vw !important;
   }
 }
